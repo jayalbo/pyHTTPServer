@@ -69,14 +69,14 @@ class PyHTTPServer(object):
                     # GET method
                         req['resource'] = '/index.html' if req.get('resource') == '/' else req.get('resource')
 
-                        # Try to open the resource if not trow exception
+                        # Try to open the resource if not throw exception
                         try:
                             with open(config['pyHTTP']['rootDir'] + req.get('resource')) as f:
                                 fCont = f.read()
                             response = " 200 OK"
                         except IOError as x:
                             # If file can't be open
-                            
+
                             if x.errno == errno.ENOENT:
                                 response = " 404 Not Found"
                                 fCont = "File not found" 
@@ -98,7 +98,7 @@ class PyHTTPServer(object):
                     # HEAD method
                         req['resource'] = '/index.html' if req.get('resource') == '/' else req.get('resource')
 
-                        # Try to open the resource if not trow exception
+                        # Try to open the resource if not throw exception
                         try:
                             with open(config['pyHTTP']['rootDir'] + req.get('resource')) as f:
                                 response = " 200 OK"
