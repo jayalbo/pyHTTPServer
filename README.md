@@ -13,5 +13,5 @@ python HTTPServer.py
 
 ## Test
 ```
-Navigate to http://localhost:8888 //default host & port
+Navigate to [http://localhost:8888](http://localhost:8888) *default host & port*
 ```
