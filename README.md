@@ -6,9 +6,12 @@ Simple Python multithreading HTTP Server using sockets
 git clone https://github.com/jayalbo/pyHTTPServer.git
 ```
 
-
 ## Run
 ```
-git clone https://github.com/jayalbo/pyHTTPServer.git
+python HTTPServer.py
+```
+
+## Test
+```
 Navigate to http://localhost:8888 //default host & port
 ```
